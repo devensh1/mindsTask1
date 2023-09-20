@@ -1,23 +1,38 @@
 .container{
+
+    /* this properties is for main container */
+
+    
     display: flex;
+    /* flex and div diveded into rows  */
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
     height: 50vh;
+    /* only used 50% vh and remaining 50%vh is for search bar and table */
     justify-content: space-between;
 }
 .header{
+    /* this properties is used for first container*/
+    
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    background-image: url('https://media.licdn.com/dms/image/D5605AQHA5cEdH0Z9tw/videocover-low/0/1689567654015?e=2147483647&v=beta&t=a9BHDoEvYp2wFFDXc-169dUH9J0NQW-HgjB9Veau1L0');
+
     
     justify-content: space-between;
 }
 .left{
-padding: 20px;
-font-size: larger;
-font-weight: bolder;
+    
+        display: flex; /* Use flexbox to control the layout */
+        /* Center the items vertically */
+        justify-content: space-between; /* Create space between items */
+    
+       padding: 20px;
+       font-size: larger;
+     font-weight: bolder;
 }
 .center{
     display: flex;
@@ -38,10 +53,13 @@ align-content: end;
 
 
 }
+
+/* for attaching circle and completed */
 .fl-row{
     display: flex;
     flex-direction: row;
 }
+/* It contain blue cirlce */
 #completed  {
     display: block;
     height: 10px;
@@ -72,43 +90,61 @@ align-content: end;
 }
 .middle{
     width: 100%;
+    padding-top:20px;
+    padding-bottom: 20px;
 }
 .search{
-    border-radius: 8px;
+
+    /* this properties is used for second container */
+    border-radius: 2px;
     padding-right:86%;
     padding-top:10px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.larger{
+
+    /* width:30vw; */
+    /*white-space: nowrap; *//* Prevent line breaks */
+    white-space: nowrap; /* Prevent line breaks */
+         overflow: hidden; /* Hide overflowed content */
+      text-overflow: ellipsis;
+    
+
 }
 th{
-
+    /* This properties is used for last container */
     background-color:#9dc609;
-
     color: white;
 
 }
+.button-container {
+    padding-left: 25%;
+    padding-top: 27px;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+    padding: 10px 20px; 
+    /* Adjust the padding to make the button larger */
+    padding-left: 15px;
+    background-color:#1184d7; /* Set the background color to blue */
+    color: white; /* Set the text color to white */
+    border: none; /* Remove the border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-size: larger; /* Increase the font size */
+    font-weight: bolder; /* Make the text bolder */
+}
+
 
 table, th,td {
-
-   
-
-   
-
     border-collapse: separate;
-
-   
-
   }
-
- 
-
 td{
-
     border: 1px solid black;
-
 }
 
   .hidden{
-
+     /* this properties is used for scrolled down automatically on the y axis */
     overflow-y: scroll;
-
   }
