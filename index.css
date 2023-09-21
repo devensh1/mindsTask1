@@ -14,7 +14,7 @@
 }
 .header{
     /* this properties is used for first container*/
-    
+    height: 35vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -97,7 +97,7 @@ align-content: end;
 
     /* this properties is used for second container */
     border-radius: 2px;
-    padding-right:86%;
+    padding-right:94%;
     padding-top:10px;
     padding-bottom: 20px;
 }
@@ -118,9 +118,15 @@ th{
     color: white;
 
 }
+
 .button-container {
-    padding-left: 25%;
-    padding-top: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 20vh;
+    margin-left: -10vw;
 }
 
 /* Style the submit button */
@@ -147,4 +153,16 @@ td{
   .hidden{
      /* this properties is used for scrolled down automatically on the y axis */
     overflow-y: scroll;
+  }
+  input{
+    height: 2vh;
+    width:5vw;
+    padding: -20px;
+  }
+
+  #addRowButton{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(228, 61, 61);
+    border-radius: 6px;
   }
