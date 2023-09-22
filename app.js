@@ -26,6 +26,7 @@ if (elements) {
 // Get references to the table and the button
 var table = document.querySelector(".table");
 var addRowButton = document.getElementById("addRowButton");
+var deleteRowButton = document.getElementById("delete-row-button");
 
 if (addRowButton) {
   addRowButton.addEventListener("click", function () {
@@ -37,6 +38,10 @@ if (addRowButton) {
       var input = document.createElement("input");
       input.style.border = "none";
       input.style.resize = "none";
+      input.style.height= "1vh";
+      input.style.width = "5vw";
+      input.style.padding = "-10px";
+     
       cell.appendChild(input);
       if (i === 15) {
         // For the "Status" column, create a select dropdown
@@ -48,6 +53,19 @@ if (addRowButton) {
     }
   });
 }
+
+
+
+
+if (deleteRowButton) {
+    deleteRowButton.addEventListener("click", function () {
+        var rowCount = table.rows.length;
+        if (rowCount > 0) {
+            table.deleteRow(rowCount - 1); // Delete the last row
+        }
+    });
+}
+
 
 
 

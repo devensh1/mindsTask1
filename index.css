@@ -120,6 +120,7 @@ th{
 }
 
 .button-container {
+    width:85%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,6 +162,12 @@ td{
   }
 
   #addRowButton{
+    height: 50px;
+    width: 150px;
+    background-color: rgb(228, 61, 61);
+    border-radius: 6px;
+  }
+  #delete-row-button{
     height: 50px;
     width: 150px;
     background-color: rgb(228, 61, 61);
